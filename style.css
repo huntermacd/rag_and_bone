@@ -1,0 +1,17 @@
+html,
+body {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+#go-to-sleep {
+    border: 1px solid black;
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    outline: none;
+    width: 100px;
+}
