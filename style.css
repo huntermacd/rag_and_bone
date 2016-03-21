@@ -1,3 +1,5 @@
+/* Run from command line to auto prefix: postcss --use autoprefixer style.css -o p-style.css */
+
 html,
 body {
     align-items: center;
@@ -8,26 +10,55 @@ body {
 }
 
 .z {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
     color: white;
     font-family: monospace;
     position: relative;
 }
 
 #z1 {
+    animation-delay: 2s;
+    animation-name: z1-float;
     left: 10px;
     top: -95px;
 }
 
+@keyframes z1-float {
+    to {
+        color: black;
+        top: -115px;
+    }
+}
+
 #z2 {
+    animation-delay: 1s;
+    animation-name: z2-float;
     font-size: 2em;
     left: -10px;
     top: -75px;
 }
 
+@keyframes z2-float {
+    to {
+        color: black;
+        top: -95px;
+    }
+}
+
 #z3 {
+    animation-name: z3-float;
     font-size: 3em;
     left: -10px;
     top: -50px;
+}
+
+@keyframes z3-float {
+    to {
+        color: black;
+        top: -70px;
+    }
 }
 
 #go-to-sleep {

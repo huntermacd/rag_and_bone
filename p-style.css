@@ -1,0 +1,104 @@
+html,
+body {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+}
+
+.z {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    color: white;
+    font-family: monospace;
+    position: relative;
+}
+
+#z1 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-name: z1-float;
+            animation-name: z1-float;
+    left: 10px;
+    top: -95px;
+}
+
+@-webkit-keyframes z1-float {
+    to {
+        color: black;
+        top: -115px;
+    }
+}
+
+@keyframes z1-float {
+    to {
+        color: black;
+        top: -115px;
+    }
+}
+
+#z2 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-name: z2-float;
+            animation-name: z2-float;
+    font-size: 2em;
+    left: -10px;
+    top: -75px;
+}
+
+@-webkit-keyframes z2-float {
+    to {
+        color: black;
+        top: -95px;
+    }
+}
+
+@keyframes z2-float {
+    to {
+        color: black;
+        top: -95px;
+    }
+}
+
+#z3 {
+    -webkit-animation-name: z3-float;
+            animation-name: z3-float;
+    font-size: 3em;
+    left: -10px;
+    top: -50px;
+}
+
+@-webkit-keyframes z3-float {
+    to {
+        color: black;
+        top: -70px;
+    }
+}
+
+@keyframes z3-float {
+    to {
+        color: black;
+        top: -70px;
+    }
+}
+
+#go-to-sleep {
+    border-radius: 10%;
+    margin-right: 50px;
+    outline: none;
+}

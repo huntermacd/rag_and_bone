@@ -13,6 +13,7 @@ window.addEventListener('touchstart', function() {
 // setup
 
 var button = document.getElementById('go-to-sleep');
+var zs = document.getElementsByClassName('z');
 
 var amp = ctx.createGain();
 amp.gain.value = 0;
@@ -48,10 +49,20 @@ function activate(){
         button.dataset.on = 'true';
         button.src = 'asleep.png';
         document.body.style.backgroundColor = 'black';
+        
+        for (var i = 0; i < zs.length; i++) {
+            zs[i].style.animationPlayState = 'running';
+            zs[i].style.visibility = 'visible';
+        }
     } else {
         amp.gain.value = 0;
         button.dataset.on = 'false';
         button.src = 'awake.png';
         document.body.style.backgroundColor = 'white';
+
+        for (var i = 0; i < zs.length; i++) {
+            zs[i].style.animationPlayState = 'paused';
+            zs[i].style.visibility = 'hidden';
+        }
     }
 }
