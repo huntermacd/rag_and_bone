@@ -7,11 +7,31 @@ body {
     margin: 0;
 }
 
+.z {
+    color: white;
+    font-family: monospace;
+    position: relative;
+}
+
+#z1 {
+    left: 10px;
+    top: -95px;
+}
+
+#z2 {
+    font-size: 2em;
+    left: -10px;
+    top: -75px;
+}
+
+#z3 {
+    font-size: 3em;
+    left: -10px;
+    top: -50px;
+}
+
 #go-to-sleep {
-    border: 1px solid black;
-    display: block;
-    height: 100px;
-    margin: 0 auto;
+    border-radius: 10%;
+    margin-right: 50px;
     outline: none;
-    width: 100px;
 }
